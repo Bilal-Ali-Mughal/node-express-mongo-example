@@ -4,4 +4,4 @@ RUN pip install selenium
 
 COPY tests /tests
 
-CMD ["python", "/tests/test_login.py"]
+CMD ["python", "/tests/test_page_load.py"]
