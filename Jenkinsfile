@@ -2,6 +2,12 @@ pipeline {
     agent any
 
     stages {
+        stage('Check Workspace') {
+            steps {
+                sh 'ls -l'
+                sh 'ls -l tests'
+            }
+        }
         stage('Code Linting') {
             steps {
                 echo 'Linting code...'
