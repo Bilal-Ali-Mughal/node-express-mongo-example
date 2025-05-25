@@ -1,8 +1,7 @@
-# Dockerfile.selenium
 FROM python:3.9-slim
 
 RUN pip install selenium
 
-COPY tests/test_login.py /tests/test_login.py
+COPY tests /tests
 
 CMD ["python", "/tests/test_login.py"]
