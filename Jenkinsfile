@@ -11,7 +11,7 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building app...'
-                sh 'docker build -t myapp .'
+                sh 'docker build -t myapp -f Dockerfile.selenium .'
             }
         }
         stage('Unit Test') {
