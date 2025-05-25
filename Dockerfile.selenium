@@ -1,9 +1,0 @@
-# Dockerfile.selenium
-FROM node:18
-
-WORKDIR /app
-
-COPY . .
-
-# Dummy selenium test command
-CMD echo "Running fake Selenium tests..."
